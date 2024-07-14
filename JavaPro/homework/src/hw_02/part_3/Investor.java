@@ -20,7 +20,5 @@ public class Investor {
             System.out.println("Накопичена сума після " + i + " років складає: " + capitalSum);
             System.out.println("Нараховано відсотків: " + sum);
         }
-
-
     }
 }
