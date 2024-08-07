@@ -7,6 +7,11 @@ public class HomeWorkApp {
         printColor(-1);
         compareNumbers(1, 3);
         trueOrFalse(5, 1);
+        positiveOrNegative(0);
+        System.out.println(falseOrTrue(-1));
+        loop("Hello", 10);
+        System.out.println(yearIs(2025));
+
     }
     //task 02
     public static void printThreeWords(){
@@ -56,6 +61,27 @@ public class HomeWorkApp {
         return bool;
     }
     //task 07
-
-
+    public static void  positiveOrNegative(int a){
+        if (a < 0) {
+            System.out.println("Число " + a + " від'ємне");
+        } else {
+            System.out.println("Число " + a + " додатнє");
+        }
+    }
+    //task 08
+    public static boolean falseOrTrue (int a){
+        boolean res = a < 0 ? true : false;
+        return res;
+    }
+    //task 9
+    public static void loop (String s, int a){
+        for (int i = 0; i < a; i++){
+            System.out.println(s);
+        }
+    }
+    //task 10
+    public static boolean yearIs (int year) {
+        boolean yearUp = (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));;
+        return yearUp;
+        }
 }
