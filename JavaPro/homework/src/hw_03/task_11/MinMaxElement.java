@@ -12,7 +12,7 @@ public class MinMaxElement {
         int[] arr = new int[number];
 
         for (int i = 0; i < arr.length; i++) {
-            double rand = Math.random() * number;
+            double rand = Math.random() * 100;
             arr[i] = (int) rand;
             System.out.print(arr[i] + " ");
         }
