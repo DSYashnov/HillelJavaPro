@@ -7,6 +7,7 @@ public class Dog extends Animal {
             System.out.println("Собака не може подолати таку дистанцію");
         } else {
             System.out.println(getName() + " пробіг " + range + "м");
+
         }
     }
 }
