@@ -9,6 +9,7 @@ public class AverageAnyAmountNumbers {
         double sum = 0;
         for(String arg : args){
             sum += Double.parseDouble(arg);
+
         }
         double average = sum / args.length;
         System.out.println("Середнє арифметичне значення: " + average);
