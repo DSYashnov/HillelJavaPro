@@ -2,12 +2,13 @@ package hw_05.Animals;
 
 public class AnimalMain {
     public static void main(String[] args) {
-        Animal an = new Animal();
+        Animal an = new Animal("Animal");
         an.run(151);
-        Cat cat = new Cat();
+        Cat cat = new Cat("Jora");
         cat.run(150);
-        Dog dog = new Dog();
-        dog.setName("Bobik");
+        cat.swim(100);
+        Dog dog = new Dog("Dick");
         dog.run(499);
+        dog.swim(11);
     }
 }
