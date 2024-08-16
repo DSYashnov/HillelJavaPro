@@ -1,12 +1,9 @@
 package hw_05.Animals;
 
 public class Cat extends Animal{
-    public static int count = 0;
-
     Cat(String name){
-        this.name = name;
+        super(name);
     }
-
     @Override
     public void run(int range) {
         if (range > 150) {
@@ -14,5 +11,8 @@ public class Cat extends Animal{
         } else {
             System.out.println(getName() + " пробіг " + range + "м");
         }
+    }
+    public void swim(int range) {
+        System.out.println("Кіт не вміє плавати");
     }
 }
