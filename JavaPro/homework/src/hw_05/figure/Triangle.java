@@ -3,16 +3,15 @@ package hw_05.figure;
 import java.util.Scanner;
 
 public class Triangle implements SquareEx {
-    Scanner s = new Scanner(System.in);
-    double a = s.nextDouble();
-    double b = s.nextDouble();
-    double c = s.nextDouble();
-    public static void main(String[] args) {
-        Triangle triangle = new Triangle();
-        System.out.println(triangle.square());
-    }
     @Override
     public double square() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter first side triangle: ");
+        double a = s.nextDouble();
+        System.out.print("Enter second side triangle: ");
+        double b = s.nextDouble();
+        System.out.print("Enter three side triangle: ");
+        double c = s.nextDouble();
         double perimeterTrinagle = (a + b + c)/2;
         double beforeSquare = perimeterTrinagle *(perimeterTrinagle -a)*(perimeterTrinagle -b)*(perimeterTrinagle -c);
         double square = Math.sqrt(beforeSquare);
