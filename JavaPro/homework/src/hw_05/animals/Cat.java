@@ -1,4 +1,4 @@
-package hw_05.Animals;
+package hw_05.animals;
 
 public class Cat extends Animal{
     Cat(String name){
