@@ -7,7 +7,14 @@ public class Road extends  Obstacle{
         this.lenghts = lenghts;
     }
 
-    public int getHeight() {
+    public int getLenghts() {
         return lenghts;
+    }
+
+    @Override
+    public String toString() {
+        return "Road{" +
+                "lenghts=" + lenghts +
+                '}';
     }
 }
