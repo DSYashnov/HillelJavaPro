@@ -10,4 +10,11 @@ public class Wall extends Obstacle {
     public int getHeight() {
         return height;
     }
+
+    @Override
+    public String toString() {
+        return "Wall{" +
+                "height=" + height +
+                '}';
+    }
 }
