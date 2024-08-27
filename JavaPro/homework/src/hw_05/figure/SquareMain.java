@@ -4,33 +4,32 @@ import java.util.Arrays;
 
 public class SquareMain {
     public static void main(String[] args) {
-//        Circle circle = new Circle();
-//        System.out.println("Площа круга: " + circle.square());
-//
-//        Triangle triangle = new Triangle();
-//        System.out.println("Площа трикутника: " + triangle.square());
-//
-//        Rectangle rectangle = new Rectangle();
-//        System.out.println("Площа прямокутника: " + rectangle.square());
-//
-        double rand;
+        Object[] arrayFigure = new Object[3];
 
-        rand = Math.random() * 3+1;  // Генерує випадкове число від 0.0 до 2.999...
+        Circle cr = new Circle();
+        Triangle triangle = new Triangle();
+        Rectangle rectangle = new Rectangle();
 
-        if (rand < 1) {
-            new Circle();
-            System.out.println("Створено коло");
-        } else if (rand < 2) {
-            new Triangle();
-            System.out.println("Створено трикутник");
-        } else {
-            new Rectangle();
-            System.out.println("Створено прямокутник");
+        arrayFigure[0] = cr;
+        arrayFigure[1] = triangle;
+        arrayFigure[2] = rectangle;
+
+        for (Object obj : arrayFigure) {
+            System.out.println(obj.toString());
         }
+        System.out.println(sumArray(arrayFigure));
 
-        // Зберігаємо випадкове число в масиві
-        double[] figure = {rand};
-        System.out.println("Згенероване випадкове число: " + Arrays.toString(figure));
+    }
+    public static double sumArray (Object[] objects){
+        double arraySum = 0;
+
+        for (Object obj : objects){
+            if(obj instanceof SquareEx){
+                SquareEx shape = (SquareEx) obj;
+                arraySum += shape.square();
+            }
+        }
+        return arraySum;
     }
 }
 
