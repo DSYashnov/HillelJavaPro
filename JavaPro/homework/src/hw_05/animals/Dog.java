@@ -1,4 +1,4 @@
-package hw_05.Animals;
+package hw_05.animals;
 
 public class Dog extends Animal {
 
