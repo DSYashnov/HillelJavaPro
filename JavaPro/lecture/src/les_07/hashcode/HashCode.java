@@ -3,7 +3,17 @@ package les_07.hashcode;
 import java.util.Objects;
 
 public class HashCode {
+    public static void main(String[] args) {
+        User u1 = new User(1, 2, 3);
+        User u2 = new User(1, 2, 4);
+        System.out.println(u1.hashCode());
+        System.out.println(u2.hashCode());
 
+        System.out.println(u1.hashCode() == u2.hashCode());
+        System.out.println(u1 == u2);
+
+        System.out.println(u1.equals(u2));
+    }
 
 }
 class User {
