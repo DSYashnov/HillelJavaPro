@@ -89,8 +89,8 @@ public class DynamicCollect {
     // метод для виведення всіх елементі вколекції на екран
     public void print () {
         for (int i = 0; i < size; i++) {
-            System.out.println(array[i] + " ");
-
+            System.out.print(array[i] + " ");
         }
+        System.out.println(); //переходимо на новий рядок
     }
 }
