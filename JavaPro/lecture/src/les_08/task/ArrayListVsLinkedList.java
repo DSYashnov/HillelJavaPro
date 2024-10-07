@@ -12,7 +12,7 @@ public class ArrayListVsLinkedList {
         10_000 (покладіть в центр по одному за раз)
 
         ArrayList ??? 0(n) = 0(1) + 0(n)
-        LinkedList ??? 0(n) = 0(1) + 0(n)
+        LinkedList ??? 0(n) = 0(1) + 0(1)
          */
 
     public static void main(String[] args) {
@@ -24,9 +24,9 @@ public class ArrayListVsLinkedList {
      int count = 5;
 
         for (int j = 0; j < count; j++) {
+            al.clear();
+            ll.clear();
             for (int i = 0; i < listSize; i++) {
-                al.clear();
-                ll.clear();
                 al.add("al_" + i);
                 ll.add("ll_" + i);
             }
@@ -40,7 +40,7 @@ public class ArrayListVsLinkedList {
             start = System.currentTimeMillis();
 
             for (int i = 0; i < inputSize; i++) {
-                ll.add(ll.size(), "ll_add_" + i);
+                ll.add(ll.size()/2, "ll_add_" + i);
             }
             System.out.println("LL add duration : " + (System.currentTimeMillis() - start));
             System.out.println();
