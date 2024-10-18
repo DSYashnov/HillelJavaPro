@@ -2,7 +2,7 @@ package practis;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-public class Practis {
+public class Practice {
 
         private static final int SIZE = 100_000;
 
