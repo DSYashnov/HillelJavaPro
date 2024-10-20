@@ -9,5 +9,6 @@ public interface Collection {
     boolean equals (Collection collection);
     boolean clear();
     int size();
+
 }
 
