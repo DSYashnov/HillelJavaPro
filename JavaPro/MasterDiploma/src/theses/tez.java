@@ -1,4 +1,4 @@
-package practis;
+package theses;
 import java.util.Arrays;
 public class tez {
         public static int[] parallelMergeSort(int[] array) {
