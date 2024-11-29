@@ -1,4 +1,4 @@
-package les_06.interfaces.logExample;
+package lessons.les_06.interfaces.logExample;
 
 public class User implements Logger{
     private String fullName;
