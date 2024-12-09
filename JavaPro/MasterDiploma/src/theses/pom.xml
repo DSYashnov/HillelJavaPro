@@ -9,4 +9,9 @@
         <artifactId>jfreechart</artifactId>
         <version>1.5.3</version>
     </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>21</version> <!-- замініть на відповідну версію -->
+    </dependency>
 </dependencies>
