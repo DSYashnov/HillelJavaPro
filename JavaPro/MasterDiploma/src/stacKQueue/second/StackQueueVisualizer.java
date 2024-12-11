@@ -4,12 +4,8 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.NumberAxis;
-import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -17,8 +13,10 @@ import java.util.*;
 
 public class StackQueueVisualizer extends Application {
 
-    private TextArea logArea;
-    private LineChart<Number, Number> chart;
+    private VBox animationArea; // Область для анімації
+    private TextArea logArea;   // Лог для запису звіту
+    private Queue<Label> visualQueue = new LinkedList<>();
+    private Stack<Label> visualStack = new Stack<>();
 
     public static void main(String[] args) {
         launch(args);
@@ -26,10 +24,15 @@ public class StackQueueVisualizer extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // Створення головного інтерфейсу
+        // Головний інтерфейс
         BorderPane root = new BorderPane();
+        animationArea = new VBox(5);
+        animationArea.setStyle("-fx-padding: 10; -fx-border-color: black; -fx-border-width: 2;");
+        animationArea.setPrefHeight(300);
 
-        // Вибір структури (стек або черга)
+        logArea = new TextArea();
+        logArea.setEditable(false);
+
         VBox controls = new VBox(10);
         controls.setStyle("-fx-padding: 10;");
         ComboBox<String> structureChoice = new ComboBox<>();
@@ -39,28 +42,20 @@ public class StackQueueVisualizer extends Application {
         TextField sizeInput = new TextField();
         sizeInput.setPromptText("Розмір структури");
 
-        Button startButton = new Button("Запустити дослідження");
-        controls.getChildren().addAll(new Label("Оберіть структуру:"), structureChoice, new Label("Розмір структури:"), sizeInput, startButton);
+        Button startButton = new Button("Запустити");
+        controls.getChildren().addAll(
+                new Label("Оберіть структуру:"),
+                structureChoice,
+                new Label("Розмір структури:"),
+                sizeInput,
+                startButton
+        );
 
         root.setLeft(controls);
-
-        // Лог результатів
-        logArea = new TextArea();
-        logArea.setEditable(false);
-        logArea.setStyle("-fx-font-family: monospace;");
-
+        root.setCenter(animationArea);
         root.setBottom(logArea);
 
-        // Графік
-        NumberAxis xAxis = new NumberAxis();
-        NumberAxis yAxis = new NumberAxis();
-        xAxis.setLabel("Операції");
-        yAxis.setLabel("Час виконання (мс)");
-        chart = new LineChart<>(xAxis, yAxis);
-        chart.setTitle("Результати досліджень");
-        root.setCenter(chart);
-
-        // Подія для кнопки
+        // Подія для запуску
         startButton.setOnAction(e -> {
             String structure = structureChoice.getValue();
             int size;
@@ -72,11 +67,10 @@ public class StackQueueVisualizer extends Application {
                 return;
             }
 
-            // Виконати дослідження
             runExperiment(structure, size);
         });
 
-        // Показати вікно
+        // Налаштування сцени
         Scene scene = new Scene(root, 800, 600);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Stack & Queue Visualizer");
@@ -84,107 +78,66 @@ public class StackQueueVisualizer extends Application {
     }
 
     private void runExperiment(String structure, int size) {
+        logArea.clear();
+        animationArea.getChildren().clear();
+        visualQueue.clear();
+        visualStack.clear();
         logArea.appendText("Початок дослідження для " + structure + " з розміром " + size + "...\n");
 
-        // Ініціалізація даних
-        List<Long> pushTimes = new ArrayList<>();
-        List<Long> popTimes = new ArrayList<>();
         Random random = new Random();
-        long startTime, endTime;
-
-        // Обробка стеку або черги
         if (structure.equals("Stack (Стек)")) {
             Stack<Integer> stack = new Stack<>();
+            Timeline timeline = new Timeline();
+            for (int i = 0; i < size; i++) {
+                int value = random.nextInt(100);
+                stack.push(value);
 
-            // Операція додавання (push)
-            startTime = System.nanoTime();
-            for (int i = 0; i < size; i++) stack.push(random.nextInt());
-            endTime = System.nanoTime();
-            pushTimes.add((endTime - startTime) / 1_000_000L);
-
-            // Операція видалення (pop)
-            startTime = System.nanoTime();
-            while (!stack.isEmpty()) stack.pop();
-            endTime = System.nanoTime();
-            popTimes.add((endTime - startTime) / 1_000_000L);
-
-            // Візуалізація стека
-            visualizeStack(stack);
+                // Візуалізація додавання
+                int index = i;
+                timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(index * 0.5), e -> {
+                    Label block = new Label(String.valueOf(value));
+                    block.setStyle("-fx-border-color: black; -fx-padding: 5; -fx-background-color: lightblue;");
+                    visualStack.push(block);
+                    animationArea.getChildren().add(0, block);
+                    logArea.appendText("Додавання до стека: " + value + "\n");
+                }));
+            }
+            for (int i = 0; i < size; i++) {
+                int index = i;
+                timeline.getKeyFrames().add(new KeyFrame(Duration.seconds((size + index) * 0.5), e -> {
+                    Label removed = visualStack.pop();
+                    animationArea.getChildren().remove(removed);
+                    logArea.appendText("Видалення зі стека: " + removed.getText() + "\n");
+                }));
+            }
+            timeline.play();
 
         } else if (structure.equals("Queue (Черга)")) {
             Queue<Integer> queue = new LinkedList<>();
+            Timeline timeline = new Timeline();
+            for (int i = 0; i < size; i++) {
+                int value = random.nextInt(100);
+                queue.add(value);
 
-            // Операція додавання (add)
-            startTime = System.nanoTime();
-            for (int i = 0; i < size; i++) queue.add(random.nextInt());
-            endTime = System.nanoTime();
-            pushTimes.add((endTime - startTime) / 1_000_000L);
-
-            // Операція видалення (poll)
-            startTime = System.nanoTime();
-            while (!queue.isEmpty()) queue.poll();
-            endTime = System.nanoTime();
-            popTimes.add((endTime - startTime) / 1_000_000L);
-
-            // Візуалізація черги
-            visualizeQueue(queue);
+                // Візуалізація додавання
+                int index = i;
+                timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(index * 0.5), e -> {
+                    Label block = new Label(String.valueOf(value));
+                    block.setStyle("-fx-border-color: black; -fx-padding: 5; -fx-background-color: lightgreen;");
+                    visualQueue.add(block);
+                    animationArea.getChildren().add(block);
+                    logArea.appendText("Додавання до черги: " + value + "\n");
+                }));
+            }
+            for (int i = 0; i < size; i++) {
+                int index = i;
+                timeline.getKeyFrames().add(new KeyFrame(Duration.seconds((size + index) * 0.5), e -> {
+                    Label removed = visualQueue.poll();
+                    animationArea.getChildren().remove(removed);
+                    logArea.appendText("Видалення з черги: " + removed.getText() + "\n");
+                }));
+            }
+            timeline.play();
         }
-
-        // Виведення результатів
-        logArea.appendText("Час виконання операцій додавання (мс): " + pushTimes + "\n");
-        logArea.appendText("Час виконання операцій видалення (мс): " + popTimes + "\n");
-
-        // Оновити графік
-        updateChart(structure, size, pushTimes, popTimes);
-    }
-
-    private void updateChart(String structure, int size, List<Long> pushTimes, List<Long> popTimes) {
-        // Створення серії для операцій додавання
-        XYChart.Series<Number, Number> pushSeries = new XYChart.Series<>();
-        pushSeries.setName(structure + " - Додавання");
-        for (int i = 0; i < pushTimes.size(); i++) {
-            pushSeries.getData().add(new XYChart.Data<>(i + 1, pushTimes.get(i)));
-        }
-
-        // Створення серії для операцій видалення
-        XYChart.Series<Number, Number> popSeries = new XYChart.Series<>();
-        popSeries.setName(structure + " - Видалення");
-        for (int i = 0; i < popTimes.size(); i++) {
-            popSeries.getData().add(new XYChart.Data<>(i + 1, popTimes.get(i)));
-        }
-
-        // Додавання серій на графік
-        chart.getData().add(pushSeries);
-        chart.getData().add(popSeries);
-
-        // Змінюємо кольори серій для кращої наочності
-        pushSeries.getNode().setStyle("-fx-stroke: blue; -fx-stroke-width: 2;");
-        popSeries.getNode().setStyle("-fx-stroke: red; -fx-stroke-width: 2;");
-    }
-
-    private void visualizeStack(Stack<Integer> stack) {
-        // Візуалізація стека з анімацією
-        Timeline timeline = new Timeline();
-        for (Integer element : stack) {
-            KeyFrame keyFrame = new KeyFrame(Duration.millis(500), e -> {
-                logArea.appendText("Додавання елемента в стек: " + element + "\n");
-            });
-            timeline.getKeyFrames().add(keyFrame);
-        }
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
-    }
-
-    private void visualizeQueue(Queue<Integer> queue) {
-        // Візуалізація черги з анімацією
-        Timeline timeline = new Timeline();
-        for (Integer element : queue) {
-            KeyFrame keyFrame = new KeyFrame(Duration.millis(500), e -> {
-                logArea.appendText("Додавання елемента в чергу: " + element + "\n");
-            });
-            timeline.getKeyFrames().add(keyFrame);
-        }
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
     }
 }
