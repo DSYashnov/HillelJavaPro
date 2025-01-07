@@ -238,12 +238,29 @@ class LabyrinthView {
         return root;
     }
 }
+import java.util.*;
 
-String text = "Hello, World!";
-System.out.println(text.toUpperCase()); // Виведе: HELLO, WORLD!
+public class Main {
+    public static void main(String[] args) {
+        // Стек
+        Deque<Integer> stack = new LinkedList<>();
+        stack.push(10);
+        stack.push(20);
+        System.out.println(stack.peek()); // 20
+        stack.pop();
 
-char[] text = { 'H', 'e', 'l', 'l', 'o' };
-text[0] = 'h';
-        System.out.println(text); // Виведе: hello
+        // Черга
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(10);
+        queue.add(20);
+        System.out.println(queue.peek()); // 10
+        queue.poll();
 
-Arrays.fill(passwordArray, '\0'); // Очищення масиву символів
+        // Множина
+        HashSet<Integer> set = new HashSet<>();
+        set.add(10);
+        System.out.println(set.contains(10)); // true
+        set.remove(10);
+    }
+}
+
