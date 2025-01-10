@@ -238,29 +238,5 @@ class LabyrinthView {
         return root;
     }
 }
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Стек
-        Deque<Integer> stack = new LinkedList<>();
-        stack.push(10);
-        stack.push(20);
-        System.out.println(stack.peek()); // 20
-        stack.pop();
-
-        // Черга
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(10);
-        queue.add(20);
-        System.out.println(queue.peek()); // 10
-        queue.poll();
-
-        // Множина
-        HashSet<Integer> set = new HashSet<>();
-        set.add(10);
-        System.out.println(set.contains(10)); // true
-        set.remove(10);
-    }
-}
 
