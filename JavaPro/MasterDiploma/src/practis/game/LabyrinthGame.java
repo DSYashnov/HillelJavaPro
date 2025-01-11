@@ -170,7 +170,6 @@ class LabyrinthView {
         this.leftButton = new Button("Вліво");
         this.rightButton = new Button("Вправо");
         this.backButton = new Button("Назад");
-
         setupLayout();
         update();
     }
