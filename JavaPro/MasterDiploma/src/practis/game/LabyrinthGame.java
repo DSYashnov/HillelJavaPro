@@ -145,7 +145,6 @@ class LabyrinthModel {
         return playerY;
     }
 }
-
 // View class
 class LabyrinthView {
     private final LabyrinthModel labyrinthModel;
