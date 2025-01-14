@@ -172,7 +172,6 @@ class LabyrinthView {
         setupLayout();
         update();
     }
-
     private void setupLayout() {
         labyrinthGrid.setAlignment(Pos.CENTER);
         labyrinthGrid.setHgap(2);
