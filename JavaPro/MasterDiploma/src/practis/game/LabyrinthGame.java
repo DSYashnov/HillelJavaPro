@@ -179,7 +179,6 @@ class LabyrinthView {
 
         HBox controls = new HBox(10, leftButton, upButton, downButton, rightButton, backButton);
         controls.setAlignment(Pos.CENTER);
-
         root.setTop(infoText);
         root.setCenter(labyrinthGrid);
         root.setBottom(controls);
