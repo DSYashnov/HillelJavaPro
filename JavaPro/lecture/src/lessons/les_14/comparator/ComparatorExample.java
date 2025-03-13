@@ -22,14 +22,14 @@ public class ComparatorExample {
         userList.add(new User("Petr", "1", 44));
 
         Comparator<User> userComparator = Comparator.comparing(User::getFirstName);
-        Comparator<User> phoneComparator = Comparator.comparing(User::getAge);
+        Comparator<User> ageComparator = Comparator.comparing(User::getAge);
 
         userList.forEach(System.out::println);
         System.out.println("---------");
         System.out.println();
         userList.sort(userComparator
-                .thenComparing(User::getFirstName)
-                .thenComparing(phoneComparator));
+                .thenComparing(User::getLastName)
+                .thenComparing(ageComparator));
         userList.forEach(System.out::println);
     }
 }
