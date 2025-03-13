@@ -1,6 +1,8 @@
 package lessons.les_14.comparator;
 
-import lessons.les_11.lombok.User;
+
+
+import lessons.les_14.User;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -10,22 +12,23 @@ public class ComparatorExample {
     public static void main(String[] args) {
         List<User> userList = new ArrayList<>();
 
-        userList.add(new User("Stanislav", "1234646456", "12345646456"));
-        userList.add(new User("Oleg", "548945", "31231"));
-        userList.add(new User("Vasiliy", "12213134553456", "123456"));
-        userList.add(new User("Denis", "4534231", "123456"));
-        userList.add(new User("Serhii", "21312345", "712873456"));
-        userList.add(new User("Olena", "1232316354656", "1234567886456"));
-        userList.add(new User("Anastasiya", "14896456423456", "1234564565466"));
+        userList.add(new User("Stanislav"));
+        userList.add(new User("Sveta"));
+        userList.add(new User("Anna", "3", 34));
+        userList.add(new User("Anna", "3", 12));
+        userList.add(new User("Alex", "3", 12));
+        userList.add(new User("Alex", "2", 43));
+        userList.add(new User("Alex", "1", 34));
+        userList.add(new User("Petr", "1", 44));
 
-        Comparator<User> userComparator = Comparator.comparing(User::getName);
-        Comparator<User> phoneComparator = Comparator.comparing(User::getPhone);
+        Comparator<User> userComparator = Comparator.comparing(User::getFirstName);
+        Comparator<User> phoneComparator = Comparator.comparing(User::getAge);
 
         userList.forEach(System.out::println);
         System.out.println("---------");
         System.out.println();
         userList.sort(userComparator
-                .thenComparing(User::getName)
+                .thenComparing(User::getFirstName)
                 .thenComparing(phoneComparator));
         userList.forEach(System.out::println);
     }
