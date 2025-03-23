@@ -8,9 +8,8 @@ import java.util.List;
 
 public class CharStream {
     public static void main(String[] args) {
-        try {
-            FileReader fileReader = new FileReader("D:\\Учеба\\Hillel IT School\\JavaPro\\lecture\\src\\lessons\\les_16\\charStream\\input.txt");
-            FileWriter fileWriter = new FileWriter("D:\\Учеба\\Hillel IT School\\JavaPro\\lecture\\src\\lessons\\les_16\\charStream\\output.txt");
+        try (FileReader fileReader = new FileReader("D:\\Учеба\\Hillel IT School\\JavaPro\\lecture\\src\\lessons\\les_16\\charStream\\input.txt");
+            FileWriter fileWriter = new FileWriter("D:\\Учеба\\Hillel IT School\\JavaPro\\lecture\\src\\lessons\\les_16\\charStream\\output.txt")){
             List<Character> list = new ArrayList<>();
             int a;
             StringBuilder sb = new StringBuilder();
@@ -30,7 +29,7 @@ public class CharStream {
             System.out.println();
             sb = new StringBuilder();
             for (String str : t) {
-                sb.append("\n");
+                sb.append(str).append("\n");
             }
             System.out.println(sb.toString());
         } catch (FileNotFoundException e) {
