@@ -9,8 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="coffeeOrderBoard" />
         <module name="unitTests" />
+        <module name="qrTest" />
         <module name="firstMvnProject" />
         <module name="blackjack" />
+        <module name="pars" />
       </profile>
     </annotationProcessing>
   </component>
