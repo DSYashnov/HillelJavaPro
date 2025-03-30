@@ -7,6 +7,10 @@
         <option value="$PROJECT_DIR$/mvnProjects/firstMvnProject/pom.xml" />
         <option value="$PROJECT_DIR$/mvnProjects/unitTests/pom.xml" />
         <option value="$PROJECT_DIR$/mvnProjects/CoffeeOrderBoard/pom.xml" />
+        <option value="$PROJECT_DIR$/mvnProjects/blackjack/pom.xml" />
+        <option value="$PROJECT_DIR$/mvnProjects/pars/pom.xml" />
+        <option value="$PROJECT_DIR$/qrTest/pom.xml" />
+        <option value="$PROJECT_DIR$/mvnProjects/qrTest/pom.xml" />
       </list>
     </option>
   </component>
