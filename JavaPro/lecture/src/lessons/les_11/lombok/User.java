@@ -12,4 +12,9 @@ public class User {
     @EqualsAndHashCode.Exclude
     private String email;
     private String phone;
+
+
+    public void printUser (User user) {
+        System.out.println(user);
+    }
 }
