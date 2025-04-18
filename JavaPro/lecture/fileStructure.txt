@@ -1,0 +1,216 @@
+[D] : lecture--[F] : lecture.iml size: 0.00 mb
+--[D] : src----[D] : lessons------[D] : les_01--------[F] : Les_1.java size: 0.00 mb
+------[D] : les_02--------[F] : ArithmeticOperation.java size: 0.00 mb
+--------[F] : Calc.java size: 0.00 mb
+--------[F] : Comments.java size: 0.00 mb
+--------[F] : Increment.java size: 0.00 mb
+--------[F] : InitVar.java size: 0.00 mb
+--------[F] : Input.java size: 0.00 mb
+--------[F] : Les_2.java size: 0.00 mb
+--------[F] : LogicOperation.java size: 0.00 mb
+--------[F] : StringExample.java size: 0.00 mb
+--------[F] : StringForm.java size: 0.00 mb
+--------[F] : StringPool.java size: 0.00 mb
+--------[D] : fileToClass----------[F] : MultiClass.class size: 0.00 mb
+----------[F] : MultiClass.java size: 0.00 mb
+----------[F] : One.class size: 0.00 mb
+----------[F] : Two.class size: 0.00 mb
+------[D] : les_03--------[D] : ArrayExample----------[F] : ArraysExample.java size: 0.00 mb
+----------[F] : DoubleArrayExample.java size: 0.00 mb
+--------[D] : breakStatement----------[F] : BreakStatement.java size: 0.00 mb
+--------[D] : forStatement----------[F] : ForStatementExample.java size: 0.00 mb
+--------[D] : ifElse----------[F] : IfElse.java size: 0.00 mb
+--------[D] : p1----------[F] : A.java size: 0.00 mb
+----------[F] : B.java size: 0.00 mb
+--------[D] : p2----------[F] : B.java size: 0.00 mb
+----------[F] : C.java size: 0.00 mb
+----------[F] : Run.java size: 0.00 mb
+--------[D] : switchCase----------[F] : SwitchCaseExample.java size: 0.00 mb
+--------[D] : tasks----------[F] : ChetNumber.java size: 0.00 mb
+----------[F] : Reverse.java size: 0.00 mb
+--------[D] : whileExample----------[F] : WhileExample.java size: 0.00 mb
+------[D] : les_04--------[D] : autoUnBox----------[F] : AutoUnBox.java size: 0.00 mb
+--------[D] : constructor----------[F] : Constructor.java size: 0.00 mb
+----------[F] : ConstructorMain.java size: 0.00 mb
+----------[F] : Predmet.java size: 0.00 mb
+----------[F] : Student.java size: 0.00 mb
+----------[F] : StudentRun.java size: 0.00 mb
+----------[F] : Wrapper.java size: 0.00 mb
+----------[F] : WrapperRun.java size: 0.00 mb
+--------[D] : exercise----------[F] : FloorFlatCalculate.java size: 0.00 mb
+--------[D] : stack----------[F] : StackExample.java size: 0.00 mb
+------[D] : les_05--------[D] : animal----------[F] : Animal.java size: 0.00 mb
+----------[F] : Cat.java size: 0.00 mb
+----------[F] : Dog.java size: 0.00 mb
+----------[F] : MainAnimal.java size: 0.00 mb
+--------[D] : exercises----------[F] : Exercises1.java size: 0.00 mb
+--------[D] : exercises2----------[F] : Exercises2.java size: 0.00 mb
+--------[D] : exercises3----------[F] : Exercises3.java size: 0.00 mb
+--------[D] : exercises4----------[F] : Exercises4.java size: 0.00 mb
+--------[D] : task----------[F] : Task1.java size: 0.00 mb
+--------[D] : transport----------[F] : AirTransport.java size: 0.00 mb
+----------[F] : GroundTransport.java size: 0.00 mb
+----------[F] : MainTransport.java size: 0.00 mb
+----------[F] : Plane.java size: 0.00 mb
+----------[F] : TRExample.java size: 0.00 mb
+----------[F] : Transport.java size: 0.00 mb
+----------[F] : WaterTransport.java size: 0.00 mb
+------[D] : les_06--------[D] : abstr----------[F] : Human.java size: 0.00 mb
+----------[F] : Main.java size: 0.00 mb
+----------[F] : Student.java size: 0.00 mb
+----------[F] : Teacher.java size: 0.00 mb
+--------[D] : interfaces----------[F] : Developer.java size: 0.00 mb
+----------[F] : Engl.java size: 0.00 mb
+----------[F] : MainLang.java size: 0.00 mb
+----------[F] : Rus.java size: 0.00 mb
+----------[F] : Say.java size: 0.00 mb
+----------[F] : SayHello.java size: 0.00 mb
+----------[D] : heir------------[F] : Interface1.java size: 0.00 mb
+------------[F] : Interface2.java size: 0.00 mb
+------------[F] : Interface3.java size: 0.00 mb
+------------[F] : InterfaceImpl.java size: 0.00 mb
+----------[D] : logExample------------[F] : Logger.java size: 0.00 mb
+------------[F] : Transport.java size: 0.00 mb
+------------[F] : User.java size: 0.00 mb
+--------[D] : task----------[F] : Number.java size: 0.00 mb
+----------[F] : NumberRemover.java size: 0.00 mb
+--------[D] : thisVSsuper----------[F] : Child.java size: 0.00 mb
+----------[F] : Constr.java size: 0.00 mb
+----------[F] : Main.java size: 0.00 mb
+----------[F] : Parent.java size: 0.00 mb
+------[D] : les_07--------[D] : agregation----------[F] : Agregation.java size: 0.00 mb
+--------[D] : association----------[F] : Association.java size: 0.00 mb
+--------[D] : composition----------[F] : Composition.java size: 0.00 mb
+--------[D] : diamond----------[F] : Execute.java size: 0.00 mb
+----------[F] : Interface1.java size: 0.00 mb
+----------[F] : Interface2.java size: 0.00 mb
+----------[F] : Print.java size: 0.00 mb
+--------[D] : enumerator----------[F] : Enumerator.java size: 0.00 mb
+----------[F] : Enumerator1.java size: 0.00 mb
+----------[F] : EnumeratorRun.java size: 0.00 mb
+----------[F] : EnumeratorRunEx.java size: 0.00 mb
+----------[F] : Operation.java size: 0.00 mb
+----------[F] : OperationRun.java size: 0.00 mb
+----------[F] : SearchSystem.java size: 0.00 mb
+----------[F] : SearchSystemRun.java size: 0.00 mb
+--------[D] : ex----------[F] : Ex3.java size: 0.00 mb
+--------[D] : hashcode----------[F] : HashCode.java size: 0.00 mb
+--------[D] : task----------[F] : Triangle.java size: 0.00 mb
+------[D] : les_08--------[D] : list----------[F] : ArrayListEx.java size: 0.00 mb
+----------[F] : LinkedListEx.java size: 0.00 mb
+----------[F] : StackEx.java size: 0.00 mb
+----------[F] : VectorEx.java size: 0.00 mb
+--------[D] : queue----------[F] : QueueEx.java size: 0.00 mb
+--------[D] : set----------[F] : HashSetEx.java size: 0.00 mb
+----------[F] : TreeSetEx.java size: 0.00 mb
+--------[D] : task----------[F] : ArrayListVsLinkedList.java size: 0.00 mb
+------[D] : les_09--------[D] : collection----------[F] : ArrayCopy.java size: 0.00 mb
+----------[F] : Iterator.java size: 0.00 mb
+----------[F] : ListOf.java size: 0.00 mb
+--------[D] : ex----------[F] : Ex1.java size: 0.00 mb
+----------[F] : Ex2.java size: 0.00 mb
+----------[F] : Ex3.java size: 0.00 mb
+--------[D] : task----------[F] : NumberRemover.java size: 0.00 mb
+----------[F] : Push.java size: 0.00 mb
+----------[F] : PushUp.java size: 0.00 mb
+----------[F] : pushUp.png size: 0.05 mb
+------[D] : les_10--------[F] : HMExp.java size: 0.00 mb
+--------[F] : HashMapEx.java size: 0.00 mb
+--------[F] : SBExample.java size: 0.00 mb
+--------[D] : charC----------[F] : CharCount.java size: 0.00 mb
+----------[F] : Text.java size: 0.01 mb
+--------[D] : ex----------[F] : EX1.java size: 0.00 mb
+--------[D] : hw_09----------[F] : HwPart1.java size: 0.00 mb
+--------[D] : task----------[F] : PalindromeNumber.java size: 0.00 mb
+----------[F] : SummTwo.java size: 0.00 mb
+------[D] : les_11--------[D] : ex----------[F] : Ex1.java size: 0.00 mb
+--------[D] : exception----------[F] : BusinessException.java size: 0.00 mb
+----------[F] : CloseExample.java size: 0.00 mb
+----------[F] : DoubleReturn.java size: 0.00 mb
+----------[F] : People.java size: 0.00 mb
+----------[F] : ScannerException.java size: 0.00 mb
+----------[F] : Test.java size: 0.00 mb
+----------[F] : ThrowsException.java size: 0.00 mb
+----------[F] : TryCatch.java size: 0.00 mb
+----------[F] : TryCatchCatchCatch.java size: 0.00 mb
+----------[F] : TryFinally.java size: 0.00 mb
+----------[F] : TryFinally1.java size: 0.00 mb
+--------[D] : exceptions----------[F] : AgeException.java size: 0.00 mb
+----------[F] : EmailException.java size: 0.00 mb
+----------[F] : Main.java size: 0.00 mb
+----------[F] : PhoneException.java size: 0.00 mb
+----------[F] : User.java size: 0.00 mb
+----------[F] : UserValidator.java size: 0.00 mb
+--------[D] : lombok----------[F] : User.java size: 0.00 mb
+----------[F] : UserRun.java size: 0.00 mb
+------[D] : les_12--------[D] : ex----------[F] : Ex1.java size: 0.00 mb
+----------[F] : Ex2.java size: 0.00 mb
+----------[F] : Ex3.java size: 0.00 mb
+--------[D] : task----------[F] : ArmstrongNumber.java size: 0.00 mb
+----------[F] : {76025C8E-4E55-469C-BF5D-E6A835338BAD}.png size: 0.12 mb
+------[D] : les_13--------[F] : RemoveDuplicateFromString.java size: 0.00 mb
+------[D] : les_14--------[F] : OptionalConstr.java size: 0.00 mb
+--------[F] : Sex.java size: 0.00 mb
+--------[F] : User.java size: 0.00 mb
+--------[F] : UserService.java size: 0.00 mb
+--------[D] : comparator----------[F] : ComparatorExample.java size: 0.00 mb
+--------[D] : predicate----------[F] : PredicatExample.java size: 0.00 mb
+--------[D] : streams----------[F] : DistinktStream.java size: 0.00 mb
+----------[F] : ExFilter.java size: 0.00 mb
+----------[F] : ExMap.java size: 0.00 mb
+----------[F] : Example.java size: 0.00 mb
+----------[F] : MapPeekStream.java size: 0.00 mb
+----------[F] : MapStream.java size: 0.00 mb
+----------[F] : SkipLimitStream.java size: 0.00 mb
+----------[F] : WhileStream.java size: 0.00 mb
+--------[D] : task----------[F] : RemoveFromText.java size: 0.00 mb
+------[D] : les_15--------[F] : ChangeWordPlace.java size: 0.00 mb
+--------[F] : ChangeWordlnText.java size: 0.00 mb
+--------[F] : RendGenerator.java size: 0.00 mb
+--------[F] : StreamConcat.java size: 0.00 mb
+------[D] : les_16--------[D] : byteStream----------[F] : ByteStream.java size: 0.00 mb
+----------[F] : images.jpg size: 0.01 mb
+----------[F] : images.png size: 0.01 mb
+----------[F] : input.txt size: 0.00 mb
+----------[F] : output.txt size: 0.00 mb
+----------[F] : plain.png size: 0.01 mb
+--------[D] : charStream----------[F] : CharStream.java size: 0.00 mb
+----------[F] : input.txt size: 0.00 mb
+----------[F] : output.txt size: 0.00 mb
+--------[D] : filestream----------[F] : FileOutputStreamEx.java size: 0.00 mb
+----------[F] : FileStream.java size: 0.00 mb
+----------[F] : input.txt size: 0.00 mb
+----------[F] : output.txt size: 0.00 mb
+--------[D] : folders----------[F] : FolderSeparator.java size: 0.00 mb
+----------[F] : MakeDir.java size: 0.00 mb
+----------[D] : newDir------------[D] : 1--------------[D] : 2----------------[D] : 3------------------[D] : folder--------[D] : io----------[F] : FolderStructureTask.java size: 0.00 mb
+----------[F] : InputParams.java size: 0.00 mb
+----------[F] : OssDetector.java size: 0.00 mb
+----------[F] : ScannerInt.java size: 0.00 mb
+----------[F] : ScannerLine.java size: 0.00 mb
+----------[F] : ScannerTest.java size: 0.00 mb
+----------[F] : SystemOut.java size: 0.00 mb
+----[D] : libs------[F] : lombok.jar size: 1.96 mb
+----[D] : presentation------[F] : lec_01.pdf size: 2.42 mb
+------[F] : lec_02.pdf size: 1.33 mb
+------[F] : lec_03.pdf size: 1.60 mb
+------[F] : lec_04.pdf size: 0.88 mb
+------[F] : lec_08.pdf size: 2.12 mb
+------[F] : lec_09.pdf size: 2.24 mb
+------[F] : lec_10.pdf size: 1.68 mb
+------[F] : lec_11.pdf size: 1.49 mb
+------[F] : lec_12.pdf size: 2.47 mb
+------[F] : lec_14.pdf size: 1.58 mb
+------[F] : lec_15.pdf size: 2.06 mb
+------[F] : lec_20.pdf size: 0.79 mb
+------[F] : lec_21.pdf size: 1.65 mb
+------[F] : lec_22.pdf size: 1.04 mb
+------[F] : lec_24.pdf size: 1.28 mb
+------[F] : lec_25.pdf size: 0.83 mb
+------[F] : lec_27.pdf size: 0.82 mb
+------[F] : lec_30.pdf size: 1.12 mb
+------[F] : lec_31.pdf size: 1.99 mb
+------[F] : lec_32.pdf size: 2.08 mb
+------[F] : lec_33.pdf size: 1.90 mb
+------[F] : lec_34.pdf size: 1.13 mb
+------[F] : lec_38.pdf size: 2.05 mb
