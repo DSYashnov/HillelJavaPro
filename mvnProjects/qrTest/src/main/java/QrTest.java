@@ -23,6 +23,7 @@ public class QrTest {
         }
     }
 
+    
     public static void generateQRCode(String data, String filePath, int width, int height) throws WriterException, IOException {
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         BitMatrix bitMatrix = qrCodeWriter.encode(data, BarcodeFormat.QR_CODE, width, height);
