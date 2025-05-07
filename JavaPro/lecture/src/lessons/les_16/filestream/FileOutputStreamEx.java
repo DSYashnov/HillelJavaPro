@@ -6,6 +6,6 @@ import java.io.OutputStream;
 
 public class FileOutputStreamEx {
     public static void main(String[] args) throws IOException {
-
+        System.out.println("Hello!!!");
     }
 }
