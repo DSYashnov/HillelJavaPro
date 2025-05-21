@@ -1,4 +1,4 @@
-package les_16;
+package hw_16;
 
 public class FileLoggerConfiguration {
     private String filePath;
