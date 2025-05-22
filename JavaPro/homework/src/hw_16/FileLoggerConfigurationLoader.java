@@ -1,4 +1,4 @@
-package les_16;
+package hw_16;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
