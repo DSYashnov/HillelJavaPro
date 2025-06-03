@@ -13,6 +13,7 @@
         <module name="coffeeOrderBoard" />
         <module name="unitTests" />
         <module name="jdbc" />
+        <module name="spark-java" />
         <module name="blackjack" />
         <module name="testTaskJdbc" />
       </profile>
