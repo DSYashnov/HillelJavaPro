@@ -15,5 +15,5 @@ public class Order {
     private Timestamp createAt;
     private Timestamp updateAt;
     private double cost;
-    //private List<Product> productList = new ArrayList<>();
+    private List<Product> productList = new ArrayList<>();
 }
