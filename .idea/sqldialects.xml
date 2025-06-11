@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/JavaPro/homework/src/hw_17/fetch.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/JavaPro/homework/src/hw_17/initsql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvnProjects/testTaskJdbc/src/main/java/description/init.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvnProjects/testTaskJdbc/src/main/java/description/query.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvnProjects/testTaskJdbc/src/main/java/description/student.sql" dialect="MySQL" />
+  </component>
+</project>
