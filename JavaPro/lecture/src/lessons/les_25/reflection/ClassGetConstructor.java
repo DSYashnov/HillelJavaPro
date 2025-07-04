@@ -46,7 +46,6 @@ public class ClassGetConstructor {
             this.val1 = val1;
             this.val2 = val2;
         }
-
         protected Baz (String val1) {
             this.val1 = val1;
         }
