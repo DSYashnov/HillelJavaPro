@@ -9,9 +9,7 @@ public class ClassGetConstructor {
         //Class<?> = Class.forName("lessons.les_25.reflection.Baz");
 
         Class cls = Baz.class;
-
         //only public
-
         Constructor[] constructors = cls.getConstructors();
         // for get public constructors
 //        for (Constructor constructor : constructors) {
