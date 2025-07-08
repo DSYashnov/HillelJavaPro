@@ -10,6 +10,7 @@ public class ClassGetConstructor {
 
         Class cls = Baz.class;
         //only public
+
         Constructor[] constructors = cls.getConstructors();
         // for get public constructors
 //        for (Constructor constructor : constructors) {
@@ -21,6 +22,7 @@ public class ClassGetConstructor {
 //                System.out.println(param.getTypeName());
 //            }
 //        }
+
         //all
         System.out.println();
         //for get public and private constructors
