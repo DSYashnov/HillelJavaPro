@@ -10,7 +10,6 @@ public class ClassGetConstructor {
 
         Class cls = Baz.class;
         //only public
-
         Constructor[] constructors = cls.getConstructors();
         // for get public constructors
 //        for (Constructor constructor : constructors) {
