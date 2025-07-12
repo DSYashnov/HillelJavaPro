@@ -36,7 +36,6 @@ public class ClassGetConstructor {
             }
         }
     }
-
     class Baz {
         private String val1;
         private Integer val2;
