@@ -5,9 +5,7 @@ import java.lang.reflect.Constructor;
 public class ClassGetConstructor {
     public static void main(String[] args) throws ClassNotFoundException{
         //Baz baz = new Baz("2", 2);
-
         //Class<?> = Class.forName("lessons.les_25.reflection.Baz");
-
         Class cls = Baz.class;
         //only public
         Constructor[] constructors = cls.getConstructors();
