@@ -19,7 +19,6 @@ public class ClassGetConstructor {
 //                System.out.println(param.getTypeName());
 //            }
 //        }
-
         //all
         System.out.println();
         //for get public and private constructors
@@ -49,7 +48,6 @@ public class ClassGetConstructor {
             this.val2 = val2;
         }
         public Baz() {
-
         }
     }
 }
