@@ -1,7 +1,6 @@
 package lessons.les_25.reflection;
 
 import java.lang.reflect.Constructor;
-
 public class ClassGetConstructor {
     public static void main(String[] args) throws ClassNotFoundException{
         //Baz baz = new Baz("2", 2);
@@ -19,6 +18,7 @@ public class ClassGetConstructor {
 //                System.out.println(param.getTypeName());
 //            }
 //        }
+        
         //all
         System.out.println();
         //for get public and private constructors
