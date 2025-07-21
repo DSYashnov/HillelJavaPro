@@ -26,11 +26,9 @@ public class MergeSort {
                 array[k++] = right[j++];
             }
         }
-
         while (i < left.length) {
             array[k++] = left[i++];
         }
-
         while (j < right.length) {
             array[k++] = right[j++];
         }
