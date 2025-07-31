@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="StringWTF" />
         <module name="qrTest" />
+        <module name="Lecture" />
         <module name="firstMvnProject" />
         <module name="pars" />
         <module name="coffeeOrderBoard" />
@@ -17,7 +18,14 @@
         <module name="spark-java" />
         <module name="blackjack" />
         <module name="testTaskJdbc" />
+        <module name="Homework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Homework" target="21" />
+      <module name="MyRoadOfTheThrone" target="21" />
+      <module name="Repetition" target="21" />
+      <module name="Repetition (1)" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
