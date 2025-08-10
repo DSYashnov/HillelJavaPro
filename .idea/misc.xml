@@ -15,7 +15,22 @@
         <option value="$PROJECT_DIR$/mvnProjects/testTaskJdbc/pom.xml" />
         <option value="$PROJECT_DIR$/mvnProjects/spark-java/pom.xml" />
         <option value="$PROJECT_DIR$/mvnProjects/StringWTF/pom.xml" />
+        <option value="$PROJECT_DIR$/../Repetition/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyRoadOfTheThrone/pom.xml" />
+        <option value="$PROJECT_DIR$/mvnProjects/coffeeOrderBoard/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyRoadOfTheThrone/Lecture/pom.xml" />
+        <option value="$PROJECT_DIR$/MyRoadOfTheThrone/pom.xml" />
+        <option value="$PROJECT_DIR$/MyRoadOfTheThrone/Lecture/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyRoadOfTheThrone/Homework/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../MyRoadOfTheThrone/Homework/pom.xml" />
+        <option value="$PROJECT_DIR$/../MyRoadOfTheThrone/Level_1/pom.xml" />
+        <option value="$PROJECT_DIR$/../Repetition/Level_1/pom.xml" />
+        <option value="$PROJECT_DIR$/../Repetition/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
